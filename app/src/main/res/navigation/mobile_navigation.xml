@@ -15,11 +15,29 @@
         android:id="@+id/nav_gallery"
         android:name="com.example.mensajeriatapatia.ui.gallery.GalleryFragment"
         android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_mensaje" />
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="com.example.mensajeriatapatia.ui.slideshow.SlideshowFragment"
+        android:name="com.example.mensajeriatapatia.DestinatarioFragment"
         android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_destinatario" />
+
+    <fragment
+        android:id="@+id/nav_busqueda"
+        android:name="com.example.mensajeriatapatia.BusquedaFragment"
+        android:label="@string/menu_busqueda"
+        tools:layout="@layout/fragment_busqueda" />
+
+    <fragment
+        android:id="@+id/nav_historial"
+        android:name="com.example.mensajeriatapatia.HistorialFragment"
+        android:label="@string/menu_historial"
+        tools:layout="@layout/fragment_historial" />
+
+    <fragment
+        android:id="@+id/nav_mensajero"
+        android:name="com.example.mensajeriatapatia.MensajeroFragment"
+        android:label="@string/menu_mensajero"
+        tools:layout="@layout/fragment_mensajero" />
 </navigation>
