@@ -1,3 +1,58 @@
 <resources>
     <string name="app_name">MensajeriaTapatia</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Inicio</string>
+    <string name="menu_gallery">Nuevo Mensaje</string>
+    <string name="menu_slideshow">Nuevo Destinatario</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="menu_mensajero">Nuevo Mensajero</string>
+    <string name="menu_busqueda">Busqueda</string>
+    <string name="menu_historial">Historial</string>
+
+    <!-- Fragment nuevo mensaje-->
+    <string name="campos">Llenar los campos para agregar un mensaje</string>
+    <string name="destinatario">Destinatarios</string>
+    <string name="mensajero">Mensajero</string>
+    <string name="tipo">Tipo</string>
+    <string name="texto">Texto</string>
+    <string name="entrar">Entra></string>
+    <!--Radio button -->
+    <string name="rbMensaje">Mensaje</string>
+    <string name="rbPaquete">Paquete</string>
+
+    <!-- Fragment Destinatario-->
+    <string name="campos2">Llenar los campos para agregar un destinatario</string>
+    <string name="nombreD">Nombre Destinitario</string>
+    <string name="direccionD">Direccion</string>
+    <string name="agregarD">Agregar</string>
+
+
+    <!-- Fragment Mensajero -->
+    <string name="campos3">Llenar los campos para agregar un mensajero</string>
+    <string name="empresa">Empresa</string>
+    <string name="direccionM">Direccion</string>
+    <string name="nombreMensajero">Nombre</string>
+    <string name="vehiculo">Vehiculo</string>
+    <string name="entraM">Entra></string>
+
+    <!-- Fragment Historial-->
+    <string name="infoH">Mensajes que has mandando</string>
+    <string name="Mensaje1">Mensaje 1</string>
+    <string name="mensaje2">Mensaje 2</string>
+    <string name="mensaje3">Mesaje 3</string>
+    <string name="mensaje4">Mensaje 4</string>
+    <string name="mensaje5">Mensaje 5</string>
+
+    <!-- Fragment Busqueda -->
+    <string name="infoBusqueda">Llena los campos para generar un mensaje</string>
+    <string name="folio">Folio</string>
+
 </resources>
