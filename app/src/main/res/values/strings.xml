@@ -25,6 +25,13 @@
     <string name="menu_busqueda">Busqueda</string>
     <string name="menu_historial">Historial</string>
 
+    <!-- Fragment Home-->
+    <string name="saludo">Hola</string>
+    <string name="usuario">Variable!</string>
+    <string name="nosotros">Sobre Nosotros</string>
+    <string name="mensaje">Bienvenido a Mensajeria Tapatía, tu solución de mensajería rápida y confiable. Simplificamos el proceso de envío de mensajes y paquetes para que puedas comunicarte con tus seres queridos y clientes de manera eficiente. ¡Descubre como mejorar tu experiencia de mensajería con nosotros!</string>
+
+
     <!-- Fragment nuevo mensaje-->
     <string name="campos">Llenar los campos para agregar un mensaje</string>
     <string name="destinatario">Destinatarios</string>

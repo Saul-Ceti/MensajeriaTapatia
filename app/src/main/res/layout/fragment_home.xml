@@ -8,16 +8,95 @@
     tools:context=".ui.home.HomeFragment" >
 
     <TextView
-        android:id="@+id/text_home"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:id="@+id/txtSaludo"
+        android:layout_width="105dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginBottom="14dp"
+        android:text="@string/saludo"
         android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/titles"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toStartOf="@+id/txtUsuario"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtSobreNosotros"
+        android:layout_width="151dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="153dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="3dp"
+        android:text="@string/nosotros"
+        android:textAlignment="center"
+        android:textColor="@color/subtitles"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/txtTituloHome"
+        android:layout_width="105dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="153dp"
+        android:layout_marginEnd="153dp"
+        android:text="@string/MainTitle"
+        android:textAlignment="center"
+        android:textColor="@color/subtitles"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/txtUsuario"
+        android:layout_width="105dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="14dp"
+        android:text="@string/usuario"
+        android:textColor="@color/titles"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtSaludo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="141dp"
+        android:layout_marginEnd="142dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtTituloHome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txtInfo"
+        android:layout_width="359dp"
+        android:layout_height="269dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="18dp"
+        android:text="@string/mensaje"
+        android:textAlignment="center"
+        android:textColor="@color/plainText"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
