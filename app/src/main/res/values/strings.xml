@@ -1,5 +1,7 @@
 <resources>
+    <!-- Strings principales -->
     <string name="app_name">MensajeriaTapatia</string>
+
     <string name="title_activity_menu">MenuActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -8,14 +10,17 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
+    <!-- Strings de la bienvenida -->
+    <string name="MainTitle">Mensajeria Tapatia</string>
+
+    <!-- Strings de los botones -->
     <string name="menu_home">Inicio</string>
     <string name="menu_mensaje">Nuevo Mensaje</string>
     <string name="menu_destinatario">Nuevo Destinatario</string>
     <string name="menu_gallery">Nuevo Mensaje</string>
     <string name="menu_slideshow">Nuevo destinatario</string>
 
-
-    <!-- TODO: Remove or change this placeholder text -->
+    <!-- Strings de los botones -->
     <string name="menu_mensajero">Nuevo Mensajero</string>
     <string name="menu_busqueda">Busqueda</string>
     <string name="menu_historial">Historial</string>
