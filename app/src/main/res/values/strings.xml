@@ -11,12 +11,12 @@
     <string name="menu_home">Inicio</string>
     <string name="menu_mensaje">Nuevo Mensaje</string>
     <string name="menu_destinatario">Nuevo Destinatario</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_gallery">Nuevo Mensaje</string>
+    <string name="menu_slideshow">Nuevo destinatario</string>
 
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="menu_mensajero">Nuevo Mensaje</string>
+    <string name="menu_mensajero">Nuevo Mensajero</string>
     <string name="menu_busqueda">Busqueda</string>
     <string name="menu_historial">Historial</string>
 

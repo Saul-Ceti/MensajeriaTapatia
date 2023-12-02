@@ -56,6 +56,16 @@ class HomeFragment : Fragment() {
     }
 }
 
+class GalleryFragment : Fragment() {
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        // Inflar el diseño para este fragment
+        return inflater.inflate(R.layout.fragment_mensaje, container, false)
+    }
+}
+
 class MensajeroFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
