@@ -12,20 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MensajeriaTapatia"
         tools:targetApi="31" >
+
+        <!-- La Activity que se inicia cuando se lanza la aplicación -->
         <activity
             android:name=".MenuActivity"
-            android:exported="false"
             android:label="@string/title_activity_menu"
-            android:theme="@style/Theme.MensajeriaTapatia.NoActionBar" />
-        <activity
-            android:name=".WelcomeActivity"
-            android:exported="true" >
+            android:theme="@style/Theme.MensajeriaTapatia.NoActionBar"
+            android:exported="true"> <!-- Importante: `exported` debe ser true si esta Activity responde a la acción MAIN y categoría LAUNCHER -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>

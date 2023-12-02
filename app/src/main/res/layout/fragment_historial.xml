@@ -57,6 +57,7 @@
                 android:id="@+id/txtMensaje1"
                 android:layout_width="match_parent"
                 android:layout_height="84dp"
+                android:layout_marginLeft="20dp"
                 android:ems="10"
                 android:inputType="text"
                 android:text="Name" />
@@ -72,6 +73,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="97dp"
                 android:ems="10"
+                android:layout_marginLeft="20dp"
                 android:inputType="text"
                 android:text="Name" />
 
@@ -86,6 +88,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="97dp"
                 android:ems="10"
+                android:layout_marginLeft="20dp"
                 android:inputType="text"
                 android:text="Name" />
 
@@ -98,6 +101,7 @@
             <TextView
                 android:id="@+id/txtMensaje4"
                 android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
                 android:layout_height="97dp"
                 android:ems="10"
                 android:inputType="text"
@@ -112,6 +116,7 @@
             <TextView
                 android:id="@+id/txtMensaje5"
                 android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
                 android:layout_height="91dp"
                 android:ems="10"
                 android:inputType="text"
