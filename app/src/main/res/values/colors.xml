@@ -17,4 +17,8 @@
     <color name="plainText">#A4D4C4</color>
     <color name="buttons">#8CCAB4</color>
     <color name="icons">#8CCAB4</color>
+    <color name="colorStroke">#E6C4B4</color>
+    <color name="colorHint">#8A807B</color>
+    <color name="colorInputText">#000000</color>
+
 </resources>
