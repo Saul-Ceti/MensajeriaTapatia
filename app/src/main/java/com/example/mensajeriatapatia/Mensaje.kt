@@ -1,12 +1,13 @@
 package com.example.mensajeriatapatia
 
-import java.util.Date
 
-class Mensaje {
+
+open class Mensaje {
     var idMensaje : String = ""
+    var emisor : String = ""
+    var receptor : String = ""
     var contenido : String = ""
+    var direccion : String = ""
     var Fecha : String = ""
-    var Emisor : String = ""
-    var Receptor : String = ""
-    var Mensajero : String = ""
+    var mensajero : String = ""
 }
