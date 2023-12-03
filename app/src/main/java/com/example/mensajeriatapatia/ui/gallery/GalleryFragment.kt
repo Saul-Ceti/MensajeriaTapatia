@@ -4,12 +4,30 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.EditText
+import android.widget.RadioButton
+import android.widget.RadioGroup
 import android.widget.TextView
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.example.mensajeriatapatia.HistorialEnvios
+import com.example.mensajeriatapatia.R
 import com.example.mensajeriatapatia.databinding.FragmentMensajeBinding
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
+import java.util.Date
 
 class GalleryFragment : Fragment() {
+    private lateinit var destinatario : EditText
+    private lateinit var mensajero : EditText
+    private lateinit var rbMensaje : RadioButton
+    private lateinit var rbPaquete : RadioButton
+    private lateinit var mensaje : EditText
+    private lateinit var radioGroup: RadioGroup
+    private lateinit var enviar : Button
+    var HistorialEnvios : HistorialEnvios = HistorialEnvios()
 
 private var _binding: FragmentMensajeBinding? = null
   // This property is only valid between onCreateView and
@@ -36,5 +54,34 @@ private var _binding: FragmentMensajeBinding? = null
 override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        destinatario = view.findViewById(R.id.edtDestinatario)
+        mensajero = view.findViewById(R.id.edtMensajero)
+        radioGroup = view.findViewById(R.id.rgTipoM)
+        rbMensaje = view.findViewById(R.id.rbMensaje)
+        rbPaquete = view.findViewById(R.id.rbPaquete)
+        mensaje = view.findViewById(R.id.edtTexto)
+        enviar = view.findViewById(R.id.btnEntra)
+
+        enviar.setOnClickListener(){
+            if(destinatario.text.isNotEmpty() && destinatario.text.isNotBlank()
+                && mensajero.text.isNotEmpty() && mensajero.text.isNotBlank()
+                && mensaje.text.isNotEmpty() && mensaje.text.isNotBlank()
+                && (rbMensaje.isChecked || rbPaquete.isChecked)){
+                var fecha = LocalDateTime.now()
+                val format = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss")
+                val date : String = fecha.format(format)
+                if(rbPaquete.isChecked){
+                    //
+                }
+                if(rbMensaje.isChecked){
+                    HistorialEnvios.agregarMensaje(mensaje.text.toString(),date,"0",destinatario.text.toString(), mensajero.text.toString())
+                    Toast.makeText(context, "Mensaje enviado",Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
     }
 }
