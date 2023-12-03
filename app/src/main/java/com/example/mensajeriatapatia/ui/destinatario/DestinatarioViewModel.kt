@@ -1,19 +1,21 @@
 package com.example.mensajeriatapatia.ui.destinatario
 
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
 
 class DestinatarioViewModel : ViewModel() {
-    private val _listaDestinatarios = MutableLiveData<MutableList<Destinatario>>(mutableListOf())
-    val listaDestinatarios: LiveData<MutableList<Destinatario>> = _listaDestinatarios
+    private val _destinatarios = MutableLiveData<List<Destinatario>>()
+    val destinatarios: LiveData<List<Destinatario>> = _destinatarios
 
-    fun agregarDestinatario(destinatario: Destinatario) {
-        val currentList = _listaDestinatarios.value ?: mutableListOf()
-        currentList.add(destinatario)
-        _listaDestinatarios.value = currentList
+    private val listaDestinatarios = mutableListOf<Destinatario>()
+
+    init {
+        _destinatarios.value = listaDestinatarios
     }
 
+    fun agregarDestinatario(destinatario: Destinatario) {
+        listaDestinatarios.add(destinatario)
+        _destinatarios.value = listaDestinatarios
+    }
 }
-
-data class Destinatario(val nombre: String, val direccion: String)
