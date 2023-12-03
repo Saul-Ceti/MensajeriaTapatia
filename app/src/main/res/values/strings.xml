@@ -1,6 +1,7 @@
 <resources>
     <!-- Strings principales -->
     <string name="app_name">MensajeriaTapatia</string>
+    <string name="lblBtnBack">Regresar</string>
 
     <string name="title_activity_menu">MenuActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -12,6 +13,34 @@
 
     <!-- Strings de la bienvenida -->
     <string name="MainTitle">Mensajeria Tapatia</string>
+
+    <!-- Log in -->
+    <string name="lblTxtWelcome">Bienvenido</string>
+    <string name="lblWelSubtitle">Ingresa tus credenciales para iniciar</string>
+    <string name="lblEdtUser">Email</string>
+    <string name="lblEdtPassword">Contraseña</string>
+    <string name="lblBtnLogin">Entrar</string>
+    <string name="lblBtnExit">Salir</string>
+    <string name="lblTxtSignin">¿Eres nuevo? Registrate ahora</string>
+
+    <!-- Sign in -->
+    <string name="titleSignin">Registrate</string>
+    <string name="subtitleSignin">Completa todos los campos y registrate</string>
+    <string name="promtpName">Nombre</string>
+    <string name="promtpEmail">Correo</string>
+    <string name="promtpAge">Edad</string>
+    <string name="promptPassword">Contraseña</string>
+    <string name="lblBtnRegister">Registrar</string>
+
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
 
     <!-- Strings de los botones -->
     <string name="menu_home">Inicio</string>
