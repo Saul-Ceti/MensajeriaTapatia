@@ -53,7 +53,7 @@
     <!-- Fragment Mensajero -->
     <string name="campos3">Llenar los campos para agregar un mensajero</string>
     <string name="empresa">Empresa</string>
-    <string name="direccionM">Direccion</string>
+    <string name="entrehgas">N. Entregas</string>
     <string name="nombreMensajero">Nombre</string>
     <string name="vehiculo">Vehiculo</string>
     <string name="entraM">Entra></string>

@@ -1,9 +1,14 @@
 package com.example.mensajeriatapatia
 
-class Mensajero : Usuario() {
-    val vehiculo : String = ""
-    val disponibilidad : Boolean = false
-    val valoraciones : Double = 0.00
-    val entregas : Int = 0
-    //val HistorialEventos : HistoralEventos
-}
+
+import android.content.Context
+
+class Mensajero(
+    var empresa: String = "",
+    var vehiculo: String = "",
+    var entregas: Int = 0,
+    var valoraciones: Double = 0.0
+)
+
+
+
