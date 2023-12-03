@@ -8,7 +8,6 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.RadioButton
 import android.widget.RadioGroup
-import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
@@ -17,7 +16,6 @@ import com.example.mensajeriatapatia.R
 import com.example.mensajeriatapatia.databinding.FragmentMensajeBinding
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
-import java.util.Date
 
 class GalleryFragment : Fragment() {
     private lateinit var destinatario : EditText
@@ -48,6 +46,7 @@ private var _binding: FragmentMensajeBinding? = null
     galleryViewModel.text.observe(viewLifecycleOwner) {
 
     }
+      Toast.makeText(requireContext(), "El fragment se ha activado", Toast.LENGTH_SHORT).show()
     return root
   }
 
@@ -75,11 +74,12 @@ override fun onDestroyView() {
                 val format = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss")
                 val date : String = fecha.format(format)
                 if(rbPaquete.isChecked){
-                    //
+                    HistorialEnvios.agregarPaquete(mensaje.text.toString(),date,"0",destinatario.text.toString(), mensajero.text.toString(),"","",0.00)
+                    Toast.makeText(requireContext(),"Se prepara paquete para envio",Toast.LENGTH_SHORT).show()
                 }
                 if(rbMensaje.isChecked){
-                    HistorialEnvios.agregarMensaje(mensaje.text.toString(),date,"0",destinatario.text.toString(), mensajero.text.toString())
-                    Toast.makeText(context, "Mensaje enviado",Toast.LENGTH_SHORT).show()
+                    HistorialEnvios.agregarMensaje(mensaje.text.toString(),date,"0",destinatario.text.toString(), mensajero.text.toString(),"")
+                    Toast.makeText(requireContext(), "Mensaje enviado",Toast.LENGTH_SHORT).show()
                 }
             }
         }
