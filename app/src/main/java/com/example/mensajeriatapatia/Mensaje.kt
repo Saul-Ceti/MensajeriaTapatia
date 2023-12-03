@@ -6,6 +6,7 @@ class Mensaje {
     var idMensaje : String = ""
     var contenido : String = ""
     var Fecha : String = ""
-    var idEmisor : String = ""
-    var idReceptor : String = ""
+    var Emisor : String = ""
+    var Receptor : String = ""
+    var Mensajero : String = ""
 }
