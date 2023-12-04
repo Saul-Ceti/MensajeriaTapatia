@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.gallery.GalleryFragment" >
+    tools:context=".ui.gallery.GalleryFragment">
 
     <TextView
         android:id="@+id/txtTituloMensaje"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="175dp"
+        android:layout_marginStart="123dp"
         android:layout_marginTop="44dp"
-        android:layout_marginEnd="175dp"
+        android:layout_marginEnd="122dp"
         android:text="@string/menu_mensaje"
+        android:textColor="@color/titles"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,141 +25,102 @@
         android:id="@+id/txtRellenar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="71dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginEnd="72dp"
-        android:layout_marginBottom="22dp"
         android:text="@string/campos"
-        app:layout_constraintBottom_toTopOf="@+id/edtDestinatario"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTituloMensaje" />
 
-    <EditText
-        android:id="@+id/edtDestinatario"
-        android:layout_width="328dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="22dp"
-        android:layout_marginEnd="39dp"
-        android:layout_marginBottom="31dp"
-        android:ems="10"
-        android:hint="@string/destinatario"
-        android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/edtMensajero"
+    <Spinner
+        android:id="@+id/spnMenDestinatarios"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="56dp"
+        android:background="@drawable/custom_edtbox"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtRellenar" />
 
     <EditText
-        android:id="@+id/edtMensajero"
-        android:layout_width="328dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="39dp"
-        android:layout_marginBottom="38dp"
+        android:id="@+id/edtMenDireccion"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="56dp"
+        android:background="@drawable/edit_text_background"
         android:ems="10"
-        android:hint="@string/mensajero"
+        android:hint="@string/lblTxtDirección"
         android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/txtTipoMensaje"
+        android:paddingStart="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtDestinatario" />
+        app:layout_constraintTop_toBottomOf="@+id/spnMenDestinatarios" />
+
+    <Spinner
+        android:id="@+id/spnMenMensajeros"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="56dp"
+        android:background="@drawable/custom_edtbox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtMenDireccion" />
 
     <RadioGroup
         android:id="@+id/rgTipoM"
-        android:layout_width="109dp"
-        android:layout_height="115dp"
-        android:layout_marginStart="76dp"
-        app:layout_constraintStart_toEndOf="@+id/txtTipoMensaje"
-        app:layout_constraintTop_toBottomOf="@+id/txtTipoMensaje">
+        android:layout_width="200dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnMenMensajeros">
 
         <RadioButton
             android:id="@+id/rbMensaje"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
             android:text="@string/rbMensaje" />
 
         <RadioButton
             android:id="@+id/rbPaquete"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
             android:text="@string/rbPaquete" />
     </RadioGroup>
 
-    <TextView
-        android:id="@+id/txtTipoMensaje"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="339dp"
-        android:layout_marginBottom="142dp"
-        android:text="@string/tipo"
-        app:layout_constraintBottom_toTopOf="@+id/edtTexto"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtMensajero" />
-
     <EditText
-        android:id="@+id/edtTexto"
-        android:layout_width="302dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="51dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="45dp"
+        android:id="@+id/edtMenContenido"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="56dp"
+        android:background="@drawable/custom_edtbox"
         android:ems="10"
-        android:hint="@string/texto"
+        android:hint="@string/lblTxtContenido"
         android:inputType="text"
+        android:paddingStart="10dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rgTipoM" />
 
     <Button
-        android:id="@+id/btnEntra"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="158dp"
-        android:layout_marginTop="42dp"
-        android:layout_marginEnd="159dp"
-        android:layout_marginBottom="20dp"
-        android:text="@string/entrar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtDimensiones" />
-
-    <EditText
-        android:id="@+id/edtDimensiones"
-        android:layout_width="150dp"
+        android:id="@+id/btnMenEnviar"
+        android:layout_width="300dp"
         android:layout_height="50dp"
-        android:layout_marginStart="51dp"
-        android:layout_marginTop="33dp"
-        android:ems="10"
-        android:hint="Dimensiones"
-        android:inputType="text"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/btnEntra"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtTexto" />
-
-    <EditText
-        android:id="@+id/edtPeso"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="59dp"
-        android:layout_marginTop="33dp"
-        android:layout_marginEnd="51dp"
-        android:layout_marginBottom="42dp"
-        android:ems="10"
-        android:hint="Peso"
-        android:inputType="number"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@id/btnEntra"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="56dp"
+        android:text="@string/lblBtnSend"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/edtDimensiones"
-        app:layout_constraintTop_toBottomOf="@+id/edtTexto" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtMenContenido" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.example.mensajeriatapatia
+package com.example.mensajeriatapatia.clases
 
 import android.content.Context
 import android.content.SharedPreferences

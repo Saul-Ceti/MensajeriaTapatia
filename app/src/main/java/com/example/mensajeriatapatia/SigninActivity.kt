@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.example.mensajeriatapatia.clases.Usuario
 
 class SigninActivity : AppCompatActivity() {
     private lateinit var nameEditText: EditText

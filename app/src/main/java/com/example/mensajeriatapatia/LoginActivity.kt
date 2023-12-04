@@ -13,7 +13,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
-import org.w3c.dom.Text
+import com.example.mensajeriatapatia.clases.Usuario
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var usernameEditText: EditText
@@ -24,25 +24,17 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-        // Texto de otro color
+
+        // Cambia el color y estilo del texto del TextView
         val signinTextView = findViewById<TextView>(R.id.txtSignin)
-
         val textoCompleto = "¿No tienes cuenta? Regístrate"
-
-        // Crear una SpannableString
         val spannableString = SpannableString(textoCompleto)
-
-        // Índices del texto que quieres resaltar
         val startIndex = textoCompleto.indexOf("Regístrate")
         val endIndex = startIndex + "Regístrate".length
 
-        // Aplicar estilo de color
+        // Cambia el color y estilo del texto
         spannableString.setSpan(ForegroundColorSpan(resources.getColor(R.color.titles)), startIndex, endIndex, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
-
-        // Aplicar estilo negrita
         spannableString.setSpan(StyleSpan(Typeface.BOLD), startIndex, endIndex, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
-
-        // Configurar el texto en el TextView
         signinTextView.text = spannableString
 
         // Inicializa los elementos de la interfaz
@@ -74,10 +66,6 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun checkCredentials(username: String, password: String): Boolean {
-        // Aquí debes verificar las credenciales.
-        // Puedes utilizar SharedPreferences para compararlas con las credenciales almacenadas.
-
-        // Supongamos que tienes una clase UserPreferences para manejar SharedPreferences.
         val userPreferences = Usuario(this)
         val savedUsername = userPreferences.getEmail()
         val savedPassword = userPreferences.getPassword()
