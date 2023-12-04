@@ -53,6 +53,7 @@ class LoginActivity : AppCompatActivity() {
                 // Puedes redirigir a otra actividad o realizar alguna acción aquí.
                 val intent = Intent(this, MenuActivity::class.java)
                 startActivity(intent)
+                finish()
             } else {
                 // Las credenciales son incorrectas, muestra un mensaje de error.
                 Toast.makeText(this, "Credenciales incorrectas", Toast.LENGTH_SHORT).show()

@@ -259,7 +259,7 @@ class GalleryFragment : Fragment() {
             val fecha = LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss"))
 
             // Agregar mensaje a la lista
-            listaMensajes.add(Mensaje(idMensaje, idDestinatario, idMensajero, tipo, contenido, fecha))
+            listaMensajes.add(Mensaje(idMensaje,"1", idDestinatario, idMensajero, contenido, fecha))
             Toast.makeText(context, "Mensaje enviado con éxito", Toast.LENGTH_SHORT).show()
 
             // Limpiar campos
