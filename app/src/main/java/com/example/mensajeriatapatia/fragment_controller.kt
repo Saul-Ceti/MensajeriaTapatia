@@ -236,6 +236,11 @@ class GalleryFragment : Fragment() {
         mensajero.adapter = context?.let { ArrayAdapter(it, android.R.layout.simple_spinner_item, listaMensajerosString) }
 
         enviar.setOnClickListener {
+            if (listaDestinatarios.isEmpty() || listaMensajeros.isEmpty()) {
+                Toast.makeText(context, "No hay destinatarios o mensajeros registrados", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
             val idMensaje = if (listaMensajes.isEmpty()) {
                 "1"
             } else {
@@ -265,6 +270,7 @@ class GalleryFragment : Fragment() {
             // Limpiar campos
             this.contenido.text.clear()
         }
+
 
         return view
     }
