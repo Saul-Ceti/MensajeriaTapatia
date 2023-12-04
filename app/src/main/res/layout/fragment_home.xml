@@ -46,7 +46,10 @@
         app:layout_constraintBottom_toTopOf="@+id/txtSobreNosotros"
         app:layout_constraintStart_toStartOf="@+id/txtSobreNosotros"
         app:layout_constraintTop_toBottomOf="@+id/txtSaludo"
-        tools:src="@drawable/ic_usuario" />
+        android:src="@drawable/logo" />/>
+
+
+
 
     <TextView
         android:id="@+id/txtInfo"
