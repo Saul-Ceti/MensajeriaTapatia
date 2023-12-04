@@ -7,86 +7,96 @@
     tools:context=".fragment_mensajero">
 
     <TextView
-        android:id="@+id/txtTitulo5"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="@string/menu_mensajero"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="16dp"/>
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="@string/campos3"
-        app:layout_constraintTop_toBottomOf="@+id/txtTitulo5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp"/>
-
-    <EditText
-        android:id="@+id/edtEmpresa"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:hint="@string/empresa"
-        android:inputType="text"
-        app:layout_constraintTop_toBottomOf="@+id/textView7"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"/>
-
-    <EditText
-        android:id="@+id/edtDireccion"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:hint="@string/direccionM"
-        android:inputType="text"
-        app:layout_constraintTop_toBottomOf="@+id/edtEmpresa"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"/>
-
-    <EditText
-        android:id="@+id/edtNombreM"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:hint="@string/nombreMensajero"
-        android:inputType="text"
-        app:layout_constraintTop_toBottomOf="@+id/edtDireccion"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"/>
-
-    <EditText
-        android:id="@+id/edtVehiculo"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:hint="@string/vehiculo"
-        android:inputType="text"
-        app:layout_constraintTop_toBottomOf="@+id/edtNombreM"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnEntra2"
-        android:layout_marginBottom="16dp"/>
-
-    <Button
-        android:id="@+id/btnEntra2"
+        android:id="@+id/txtMjrTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/entrar"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="112dp"
+        android:text="@string/menu_mensajero"
+        android:textColor="@color/titles"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="16dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtMjrSubtitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="66dp"
+        android:text="@string/lblMjrSubtitulo"
+        android:textColor="@color/subtitles"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMjrTitulo" />
+
+    <EditText
+        android:id="@+id/edtMjrEmpresa"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="55dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="@string/lblMjrEmpresa"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMjrSubtitulo" />
+
+    <EditText
+        android:id="@+id/edtMjrVehiculo"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="55dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="@string/lblMjrVehiculo"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtMjrEmpresa" />
+
+    <TextView
+        android:id="@+id/lblMjrRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="169dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="169dp"
+        android:text="@string/lblMjrValoracion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtMjrVehiculo" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="85dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblMjrRating" />
+
+    <Button
+        android:id="@+id/btnMjrAdd"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="56dp"
+        android:text="@string/lblBtnAdd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

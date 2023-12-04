@@ -2,6 +2,8 @@
     <!-- Strings principales -->
     <string name="app_name">MensajeriaTapatia</string>
     <string name="lblBtnBack">Regresar</string>
+    <string name="lblBtnSend">Enviar</string>
+    <string name="lblBtnAdd">Agrega</string>
 
     <string name="title_activity_menu">MenuActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -32,62 +34,45 @@
     <string name="promptPassword">Contraseña</string>
     <string name="lblBtnRegister">Registrar</string>
 
-    <string name="title_activity_login">LoginActivity</string>
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
-
-    <!-- Strings de los botones -->
+    <!-- Menú -->
     <string name="menu_home">Inicio</string>
     <string name="menu_mensaje">Nuevo Mensaje</string>
     <string name="menu_destinatario">Nuevo Destinatario</string>
     <string name="menu_gallery">Nuevo Mensaje</string>
     <string name="menu_slideshow">Nuevo destinatario</string>
-
-    <!-- Strings de los botones -->
     <string name="menu_mensajero">Nuevo Mensajero</string>
     <string name="menu_busqueda">Busqueda</string>
     <string name="menu_historial">Historial</string>
 
-    <!-- Fragment Home-->
+    <!-- Fragment Home -->
     <string name="saludo">Hola</string>
     <string name="usuario">Variable!</string>
     <string name="nosotros">Sobre Nosotros</string>
     <string name="mensaje">Bienvenido a Mensajeria Tapatía, tu solución de mensajería rápida y confiable. Simplificamos el proceso de envío de mensajes y paquetes para que puedas comunicarte con tus seres queridos y clientes de manera eficiente. ¡Descubre como mejorar tu experiencia de mensajería con nosotros!</string>
 
-
-    <!-- Fragment nuevo mensaje-->
-    <string name="campos">Llenar los campos para agregar un mensaje</string>
-    <string name="destinatario">Destinatarios</string>
-    <string name="mensajero">Mensajero</string>
-    <string name="tipo">Tipo</string>
-    <string name="texto">Texto</string>
-    <string name="entrar">Entra></string>
-    <!--Radio button -->
+    <!-- Fragment mensaje -->
+    <string name="campos">Llena los campos para agregar un mensaje</string>
+    <string name="lblTxtDestinatarios">Destinatarios</string>
+    <string name="lblTxtMensajero">Mensajero</string>
+    <string name="lblTxtDirección">Dirección</string>
+    <string name="lblTipoMensaje">Tipo</string>
     <string name="rbMensaje">Mensaje</string>
     <string name="rbPaquete">Paquete</string>
+    <string name="lblTxtContenido">Contenido</string>
 
-    <!-- Fragment Destinatario-->
+    <!-- Fragment destinatario -->
     <string name="campos2">Llenar los campos para agregar un destinatario</string>
     <string name="nombreD">Nombre Destinitario</string>
     <string name="direccionD">Direccion</string>
     <string name="agregarD">Agregar</string>
 
+    <!-- Fragment mensajero -->
+    <string name="lblMjrSubtitulo">Llena los campos para agregar un mensajero</string>
+    <string name="lblMjrEmpresa">Empresa</string>
+    <string name="lblMjrVehiculo">Vehiculo</string>
+    <string name="lblMjrValoracion">Calificación</string>
 
-    <!-- Fragment Mensajero -->
-    <string name="campos3">Llenar los campos para agregar un mensajero</string>
-    <string name="empresa">Empresa</string>
-    <string name="direccionM">Direccion</string>
-    <string name="nombreMensajero">Nombre</string>
-    <string name="vehiculo">Vehiculo</string>
-    <string name="entraM">Entra></string>
-
-    <!-- Fragment Historial-->
+    <!-- Fragment historial-->
     <string name="infoH">Mensajes que has mandando</string>
     <string name="Mensaje1">Mensaje 1</string>
     <string name="mensaje2">Mensaje 2</string>
@@ -95,8 +80,8 @@
     <string name="mensaje4">Mensaje 4</string>
     <string name="mensaje5">Mensaje 5</string>
 
-    <!-- Fragment Busqueda -->
-    <string name="infoBusqueda">Llena los campos para generar un mensaje</string>
-    <string name="folio">Folio</string>
-
+    <!-- Fragment busqueda -->
+    <string name="infoBusqueda">Agrega el id del mensaje que quieres saber los detalles</string>
+    <string name="lblBusId">Id</string>
+    <string name="lblBusBuscar">Buscar</string>
 </resources>
